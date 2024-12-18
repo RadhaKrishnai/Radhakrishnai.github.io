@@ -1,58 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a student passionate about web development and design. I love creating beautiful, functional websites.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+        /* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e8e3e3;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #090606;
+
+  padding: 15px 20px;
+}
+
+.header-row .box h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-row ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-row ul li {
+  margin: 0 10px;
+}
+
+.header-row ul li a {
+  text-decoration: none;
+  color: #e9e4e4;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.header-row ul li a:hover {
+  background-color: #0c0c0c;
+  border-radius: 5px;
+}
+
+/* Row styles */
+.row {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.row h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  background-color: white;
+  color: #212121;
+}
+
+.row p, .row h3 {
+  margin-bottom: 10px;
+}
+
+.row img {
+  align-items: center;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+/* Box styles */
+.box {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  background: #090808;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px 0 0;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Projects section */
+#projects .box h3 {
+  color: #fff;
+}
+
+#projects .box {
+  background-color: #e57373;
+}
+
+/* Services section */
+#services .box h3 {
+  color: #fff;
+}
+
+#services .box {
+  background-color: #64b5f6;
+}
+
+/* Contact section */
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background-color: #fbc02d;
+}
+
+#contact .box {
+  background-color: #fffde7;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-row"> 
+        <div class="box"><h1>Radha Krishna Kuttuboina</h1></div>
+        <div class="box">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row" id="home">
+        <div style="display: flex;padding-top: 50px;">
+          <div class="box">
+            <h1>Front-End Developer</h1>
+            <p>
+              I specialize in designing and developing visually stunning, responsive, and user-friendly websites. With a deep understanding of modern web technologies like HTML, CSS, and JavaScript, I bring creative designs to life while ensuring seamless functionality. My focus is on crafting intuitive interfaces that enhance user experience and leave a lasting impression.
+            </p>
+            <p>
+              Passionate about staying up to date with the latest trends and tools in front-end development, I excel in creating cross-browser compatible and mobile-first designs. I thrive on turning complex ideas into functional, engaging web solutions, ensuring both visual appeal and performance optimization.
+            </p>
+            <button>Button 1</button>
+            <button>Button 1</button>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/id/2/400/400" />
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="row" style="background-color: lightcoral">
+        <h1>Projects</h1>
+        <div style="display: flex">
+          <div class="box">
             <h3>Project 1</h3>
-            <p>Description of your first project.</p>
-        </div>
-        <div class="project">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
             <h3>Project 2</h3>
-            <p>Description of your second project.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
         </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
-</body>
+      </div>
+      <div id="services" class="row" style="background-color: lightblue">
+        <h1>Services</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3>Web App Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Mobile App Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Backend Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="row">
+        <h1>About</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
+          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
+          ipsa veniam deserunt asperiores nesciunt at provident itaque
+          cupiditate vel dolor.
+        </h3>
+        <h2>Skills</h2>
+        <h3>Java, Python, Reactjs</h3>
+        <p>Display the logo of all the technologies you know.</p>
+      </div>
+      <div
+        id="contact"
+        class="row"
+        style="background-color: lightgoldenrodyellow"
+      >
+        <h1>Contact</h1>
+        <div style="display: flex">
+         
+
+          <div class="box">
+            <h3 style="color: #090606;">Contact Form</h3>
+            <p>
+             <input type="text" placeholder="Enter Name">
+            </p>
+            <p>
+              <input type="email" placeholder="Enter Email">
+             </p>
+             <p>
+              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
+             </p>
+             <button>Send</button>
+          </div>
+
+          <div class="box">
+            <h3 style="color: #090606;">Your/Company Name</h3>
+            <p style="color: #090606;">
+              <b style="color: #090606;">Address: </b style="color: #090606;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+            <p style="color: #090606;">
+              <b style="color: #090606;">Email Address: </b>radhakrishn147k@email.com 
+            </p>
+            <p style="color: #090606;">
+              <b style="color: #090606;">Phone Number: </b>+91 7995637390
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">@copyright 2024. All rights reserved.</div>
+    </div>
+  </body>
 </html>
