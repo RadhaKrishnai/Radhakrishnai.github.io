@@ -13,26 +13,22 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #474646;
-  color: #333;
+  
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
+  
 }
 
 /* Header styles */
 .header-row {
+  position: sticky;
+  top: 0px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #090606;
- 
-
-  padding: 15px 20px;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  background-color: #080d0f;
+  /* padding: 15px 20px; */
 }
 
 .header-row .box h1 {
@@ -161,14 +157,40 @@ button:hover {
   font-size: 14px;
 }
 
+
+
+
+.skills-logos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skills-logos img {
+  transition: transform 0.3s ease;
+}
+
+.skills-logos img:hover {
+  transform: scale(1.1);
+}
+
+  .box1{
+    /* margin-top: 30px; */
+    text-align: center;
+    align-content: center;
+  }
+
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="header-row"> 
         <div class="box"><h1>Radha Krishna Kuttuboina</h1></div>
-        <div class="box">
-          <ul>
+        <div class="box1">
+
+          <ul class="subnames">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
@@ -179,7 +201,7 @@ button:hover {
         </div>
       </div>
 
-      <div class="row" id="home" style="background-color: #64b5f6;">
+      <div class="row" id="home" style="background-color: skyblue" >
         <div style="display:flex;padding-top: 50px;">
           <div class="box">
             <h1 style="background-color: white;">Front-End Developer</h1>
@@ -255,7 +277,14 @@ button:hover {
         </h3>
         <h2>Skills</h2>
         <h3>html, css, java script, Reactjs, java</h3>
-        <p>Display the logo of all the technologies you know.</p>
+        <div class="skills-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" title="HTML" width="50" height="50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo" title="CSS" width="50" height="50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" title="JavaScript" width="50" height="50">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS Logo" title="ReactJS" width="50" height="50">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" title="Java" width="50" height="50">
+      </div>
+        </div>
       </div>
       <div
         id="contact"
